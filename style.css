@@ -99,8 +99,11 @@ img {
     transition: all 0.5s, ease-in-out 0.5s;
 }
 
-#menuInlineHoverDiv:hover {
+#menuInlineHoverDiv:hover, #menuButton:hover, #menuInlineDiv:hover{
     margin-left: 20px;
+}
+
+#menuInlineDiv:hover {
     color: #808080;
     visibility: visible;
 }
@@ -117,9 +120,14 @@ img {
 }
 
 .menuButton {
-    visibility: collapse;
+    visibility: visible;
+    background-color: yellow;
     text-align: right;
     -moz-transition: all 0.5s, ease-in-out 0.5s;
     -webkit-transition: all 0.5s, ease-in-out 0.5s;
     transition: all 0.5s, ease-in-out 0.5s;
+}
+
+#menuButton:hover{
+    background-color: #FF0000;
 }
